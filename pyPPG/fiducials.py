@@ -156,7 +156,7 @@ class FpCollection:
 
         # detect peaks in windows
         all_p4 = []
-        all_hr = np.empty(len(win_starts)-1)
+        all_hr = np.empty(len(win_starts))
         all_hr [:] = np.nan
         hr_past = 0 # the actual heart rate
         hrvi = 0    # heart rate variability index
