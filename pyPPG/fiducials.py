@@ -70,7 +70,7 @@ class FpCollection:
             for key in list(temp_sig.keys()):
                 fiducials[key] = dummy
                 temp_val = temp_sig[key].values
-                fiducials[key][0:len(temp_val)]=temp_val
+                fiducials[key][0:len(temp_val)] = temp_val
 
         # Correct Fiducial Points
         fiducials=self.correct_fiducials(fiducials, s.correction)
